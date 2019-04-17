@@ -1,0 +1,84 @@
+html, body, figure, figcaption, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: lightyellow;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 900;
+  margin: 30px;
+}
+
+.hanoi {
+  margin: 30px auto;
+  width: 600px;
+}
+
+ul {
+  float: left;
+  width: 180px;
+  padding: 0 0 8px 0;
+  border-bottom: 10px solid darkgray;
+  cursor: pointer;
+}
+
+ul:hover {
+  border-color: limegreen;
+}
+
+ul.selected {
+  border-color: darkred;
+}
+
+ul:nth-child(2) {
+  margin: 0 20px;
+}
+
+li {
+  width: 0px;
+  margin: 8px auto;
+  height: 60px;
+  background: lightsalmon;
+  border-radius: 30px;
+}
+
+li.disk-1 {
+  width: 60px;
+}
+
+li.disk-2 {
+  width: 120px;
+}
+
+li.disk-3 {
+  width: 180px;
+}
+
+.game-over ul {
+  cursor: default;
+  border-color: darkgray;
+}
+
+.game-over li {
+  background: salmon;
+}
+
